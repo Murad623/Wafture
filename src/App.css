@@ -1,38 +1,220 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nova+Square&family=Pixelify+Sans:wght@400;500;600;700&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ff598d;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(87, 16, 194);
+}
+::-webkit-scrollbar-thumb:hover {
+  transition-delay: 250ms;
+  background: rgb(69, 9, 158);
+}
+.App, body, #root {
   text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  overflow-y: auto;
+  font-family: "Pixelify Sans";
+  background-color: rgb(6, 0, 56);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  font-family: "Pixelify Sans";
+  background-color: rgb(255, 187, 0);
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 20px;
+  font-size: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input:focus{
+  outline: none;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(87, 16, 194);
+  color: white;
+  max-height: 39.2px;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbarleft{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.accDetails{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(87, 16, 194);
+  padding: 0 10px;
+}
+.accD{
+  width: fit-content;
+}
+.accDs{
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.accDs:hover, .accName:hover{
+  background-color: rgb(69, 9, 158);
+}
+.navlink{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.links{
+  display: block;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p{
+  width: fit-content;
+  margin: 10px 0;
+}
+.brend{
+  color: rgb(255, 187, 0);
+  text-shadow: 1px 1px black;
+}
+@media screen and (min-width: 991px) and (max-width: 1440px) {
+  .navbar{
+    max-height: 48.8px;
   }
-  to {
-    transform: rotate(360deg);
+  .accDs{
+    font-size: 150%;
+  }
+  .links{
+    font-size: 150%;
+  }
+  .accDetails{
+    margin: auto 0;
+    padding: 0;
+  }
+  .accDs{
+    text-align: center;
+    width: fit-content;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 991px) {
+  .navbar{
+    max-height: 35.2px;
+  }
+  .accDs{
+    font-size: 80%;
+  }
+  .links{
+    font-size: 80%;
+  }
+  .accDetails{
+    margin: auto 0;
+    padding: 0;
+  }
+  .accDs{
+    text-align: center;
+    width: fit-content;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 760px) {
+  .navbar{
+    max-height: 35.2px;
+  }
+  .accDs{
+    font-size: 80%;
+  }
+  .links{
+    font-size: 80%;
+  }
+  .accDetails{
+    margin: auto 0;
+    padding: 0;
+  }
+  .accDs{
+    text-align: center;
+    width: fit-content;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 600px) {
+  .navbar{
+    max-height: 33.6px;
+  }
+  .accDs{
+    font-size: 70%;
+  }
+  .links{
+    font-size: 70%;
+  }
+  .navbarleft{
+    width: 80%;
+  }
+  .accDetails{
+    margin: auto 0;
+    padding: 0;
+  }
+  .accDs{
+    text-align: center;
+    width: fit-content;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .navbar{
+    max-height: 33.6px;
+  }
+  .accDs{
+    font-size: 70%;
+  }
+  .links{
+    font-size: 70%;
+  }
+  .navbarleft{
+    width: 80%;
+  }
+  .accDetails{
+    margin: auto 0;
+    padding: 0;
+  }
+  .accDs{
+    text-align: center;
+    width: fit-content;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 375px) {
+  .navbar{
+    max-height: 33.6px;
+  }
+  .accDs{
+    font-size: 65%;
+  }
+  .links{
+    font-size: 65%;
+  }
+  .navbarleft{
+    width: 80%;
+  }
+  .accDetails{
+    margin: auto 0;
+    padding: 0;
+  }
+  .accDs{
+    text-align: center;
+    width: fit-content;
+    width: 100%;
   }
 }

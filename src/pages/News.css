@@ -1,0 +1,29 @@
+.News{
+  padding: 20px 0 1px;
+}
+.embed-responsive{
+  border: 2px black;
+  border-style: solid none none;
+  padding: 10px;
+}
+.text2{
+  text-decoration: none;
+  color: black;
+  cursor: auto;
+}
+.newsImg{
+  width: 70%;
+}
+.tImage{
+  width: 100%;
+  cursor: pointer;
+}
+.newsDiv{
+  border: 2px solid black;
+  margin:  0 20px 20px;
+  box-shadow: 5px 5px;
+  display: flex;
+}
+.newsDiv h1.text{
+  margin: 0 !important;
+}

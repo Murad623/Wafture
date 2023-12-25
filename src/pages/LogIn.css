@@ -1,0 +1,32 @@
+.errMessage{
+    display: none;
+    color: red;
+}
+.LogIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+.formLbl{
+    background-color: rgb(255, 187, 0);
+    color: rgb(87, 16, 194);
+    font-weight: 900;
+    width: fit-content;
+    padding: 10px 20px;
+    border: rgb(87, 16, 194) 3px solid;
+    box-shadow: 10px 10px 0 0 black;
+}
+.input2{
+    margin: 10px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.btn2{
+    height: fit-content;
+    margin: 5px 10px;
+    cursor: pointer;
+}

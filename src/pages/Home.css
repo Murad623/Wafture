@@ -1,0 +1,150 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    border: 5px solid rgb(87, 16, 194);
+    border-radius: 24.5px;
+    background-color: rgb(213, 213, 213);
+    width: 75vw;
+    margin: 10px 0;
+}
+.gImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 50%;
+    padding: 20px 15px;
+}
+.cAndL{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.text,.link{
+    
+    background-color: rgb(255, 187, 0);
+    color: rgb(87, 16, 194);
+    font-weight: 900;
+    width: 100%;
+    padding: 10px;
+    border: rgb(87, 16, 194) 3px solid;
+    box-shadow: 10px 10px 0 0 black;
+}
+.hrefs{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+    align-items: end;
+    padding: 20px 15px;
+}
+.link{
+    margin: 10px;
+    max-height: 19.2px;
+    width: fit-content;
+    text-decoration: none;
+}
+.storeLinks{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 991px) and (max-width: 1440px) {
+    .text{
+        margin: 5px !important;
+        box-shadow: 5px 5px 0 0 black;
+        padding: 7px;
+    }
+    p.text, .link{
+        font-size: 12px;
+    }
+    h1.text{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 760px) and (max-width: 991px) {
+    .text, .link{
+        margin: 3px !important;
+        box-shadow: 3px 3px 0 0 black;
+        padding: 5px;
+        border: rgb(87, 16, 194) 2px solid;
+    }
+    p.text, .link{
+        font-size: 10px;
+    }
+    h1.text{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 760px) {
+    .text, .link{
+        margin: 3px !important;
+        box-shadow: 3px 3px 0 0 black;
+        padding: 5px;
+        border: rgb(87, 16, 194) 2px solid;
+    }
+    p.text, .link{
+        font-size: 8px;
+    }
+    h1.text{
+        font-size: 11px;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 600px) {
+    .text, .link{
+        margin: 2px !important;
+        box-shadow: 2px 2px 0 0 black;
+        padding: 2px;
+        border: rgb(87, 16, 194) 1px solid;
+    }
+    p.text, .link{
+        font-size: 6px;
+        text-wrap: wrap;
+    }
+    h1.text{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .text, .link{
+        margin: 2px !important;
+        box-shadow: 2px 2px 0 0 black;
+        padding: 2px;
+        border: rgb(87, 16, 194) 1px solid;
+    }
+    p.text, .link{
+        font-size: 5px;
+        text-wrap: wrap;
+    }
+    h1.text{
+        font-size: 8px;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 375px) {
+    .text, .link{
+        margin: 2px !important;
+        box-shadow: 2px 2px 0 0 black;
+        padding: 2px;
+        border: rgb(87, 16, 194) 1px solid;
+    }
+    p.text, .link{
+        font-size: 4px;
+        text-wrap: wrap;
+    }
+    h1.text{
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,141 @@
+.Settings {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70vw;
+    height: 100%;
+    text-align: start;
+    background-color: rgb(255, 187, 0);
+    overflow-y: auto;
+}
+.conDelete{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.confirm{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 161px;
+    max-height: 117.6px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    box-shadow: 0 0 5px 2px red inset;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+}
+#goback{
+    font-weight: 700;
+    color: rgb(87, 16, 194);
+}
+#deleteAcc{
+    font-weight: 700;
+    color: red;
+}
+#goback:hover{
+    background-color: rgb(87, 16, 194);
+    color: rgb(255, 187, 0);
+    box-shadow: 2px 2px black;
+    scale: 1.05;
+}
+#deleteAcc:hover{
+    background-color: red;
+    color: white;
+    box-shadow: 2px 2px black;
+    scale: 1.05;
+}
+.ans{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 187, 0);
+    border: 2px black;
+    border-style: none none solid;
+}
+h1{
+    margin: 0;
+}
+.SettingsDetails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.setBlock {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 161px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+}
+.sendBtn{
+    border: 2px solid black;
+    min-width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete{
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.delete:hover{
+    scale: 1.01;
+    background-color: red;
+    color: white;
+    box-shadow: 2px 2px black;
+}
+.headline{
+    margin: 0 0 20px;
+    text-shadow: 1px 1px rgb(87, 16, 194);
+}
+.headlineS{
+    text-shadow: 1px 1px rgb(87, 16, 194);
+}
+.headlineD{
+    margin: 0 0 20px;
+    color: red;
+    text-shadow: 1px 1px black;
+}
+.hlD{
+    color: red;
+}
+#ays{
+    color: red;
+    font-weight: 700;
+}
+.accountDetail{
+
+}
+.passBlock{
+    display: flex;
+    flex-direction: column;
+}
+.passArea{
+
+}
+@media screen and (min-width: 300px) and (max-width: 375px) {
+    .headlineS{
+        font-size: 24px;
+    }
+    .sendBtn{
+        font-size: 16px;
+    }
+}
