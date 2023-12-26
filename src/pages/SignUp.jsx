@@ -63,7 +63,7 @@ const SignUp = () =>{
         createAccount()
     },[users])
     const handleChange =(e)=>{
-        setAccount(u=>({...u,[e.target.name]: e.target.value}))
+        setAccount(u=>({...u,[e.target.name]: e.target.value.trim()}))
     }
     return(
         <div className="SignUp">
