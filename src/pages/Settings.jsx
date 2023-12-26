@@ -24,9 +24,7 @@ const Settings = () => {
     }
     useEffect(()=>{
         setAccount(slAcc)
-        
         setOldPass(slAcc.Password)
-        // console.log(slAcc);
         if (slAcc.ID == undefined) {
             navigate("/")
         }
@@ -43,7 +41,7 @@ const Settings = () => {
     }
     useEffect(()=>{
         const confPass = document.querySelector("#confPass")
-        if(confirmPass.length > 0){
+        if(confirmPass.length > 7){
             if (confirmPass == newPass) {
                 confPass.style.backgroundColor = "rgb(0,255,0)"
                 setAccount(u=>({...u,["Password"]: newPass}))
@@ -61,7 +59,7 @@ const Settings = () => {
     },[confirmPass])
     useEffect(()=>{
         const confPass = document.querySelector("#confPass")
-        if(confirmPass.length > 0){
+        if(confirmPass.length > 7){
             if (confirmPass == newPass) {
                 confPass.style.backgroundColor = "rgb(0,255,0)"
                 setAccount(u=>({...u,["Password"]: newPass}))
@@ -81,11 +79,16 @@ const Settings = () => {
         getUser()
         if (account.Name != slAcc.Name || 
             account.Username != slAcc.Username || 
-            account.Email != slAcc.Email || 
+            account.Email != slAcc.Email ||
             account.Password != slAcc.Password || 
             account.Phone != slAcc.Phone || 
             account.Region != slAcc.Region) {
-            setUpdateBtnValid(false)
+            if (account.Password != undefined && account.Password.length == 0) {
+                setAccount(u=>({...u,["Password"]: oldPass}))
+            }
+            else{
+                setUpdateBtnValid(false)
+            }
         }else{
             setUpdateBtnValid(true)
         }
