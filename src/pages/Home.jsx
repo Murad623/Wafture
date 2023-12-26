@@ -27,7 +27,7 @@ const Home = () =>{
                         </p>
                     </div>
                     <div className="hrefs">
-                        <a className="link" href="https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-138128#description">Go Asset Store</a>
+                        <a className="link" href="https://assetstore.unity.com/packages/2d/environments/warped-city-assets-pack-138128#description">Warped City package</a>
                         <a className="link" href={WCA} download="Warped_City_Assets.zip">Download</a>
                     </div>
                 </div>
@@ -52,11 +52,11 @@ const Home = () =>{
                         </p>
                     </div>
                     <div className="hrefs">
-                        <div className="storeLinks">
-                            <a className="link" href="https://assetstore.unity.com/packages/2d/environments/pixel-art-platformer-village-props-166114">Go for Cainos package</a>
-                            <a className="link" href="https://assetstore.unity.com/packages/2d/environments/pixel-skies-demo-background-pack-226622">Go for sky package</a>
-                            <a className="link" href="https://assetstore.unity.com/packages/2d/characters/bandits-pixel-art-104130">Go for character package</a>
-                        </div>
+                            <a className="link" href="https://assetstore.unity.com/packages/2d/environments/pixel-art-platformer-village-props-166114">Cainos package</a>
+                            <a className="link" href="https://assetstore.unity.com/packages/2d/environments/pixel-skies-demo-background-pack-226622">Sky package</a>
+                            <a className="link" href="https://assetstore.unity.com/packages/2d/characters/bandits-pixel-art-104130">Character package</a>
+                        {/* <div className="storeLinks">
+                        </div> */}
                         <a className="link" href={Cainos} download="Cainos.zip">Download</a>
                     </div>
                 </div>

@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: center;
     position: relative;
+    background-color: rgb(6, 0, 56) !important;
     border: 5px solid rgb(87, 16, 194);
     border-radius: 24.5px;
     background-color: rgb(213, 213, 213);
@@ -36,7 +37,6 @@
     justify-content: space-between;
 }
 .text,.link{
-    
     background-color: rgb(255, 187, 0);
     color: rgb(87, 16, 194);
     font-weight: 900;
@@ -47,15 +47,14 @@
 }
 .hrefs{
     display: flex;
-    flex-direction: row;
-    /* justify-content: end; */
+    flex-direction: column;
+    justify-content: end;
     align-items: end;
     padding: 20px 15px;
 }
 .link{
     margin: 10px;
-    max-height: 19.2px;
-    width: fit-content;
+    width: 100%;
     text-decoration: none;
 }
 .storeLinks{
@@ -69,82 +68,146 @@
         padding: 7px;
     }
     p.text, .link{
-        font-size: 12px;
+        font-size: 16px;
     }
     h1.text{
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 @media screen and (min-width: 760px) and (max-width: 991px) {
+    .cAndL{
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+    .gameContainer{
+        flex-direction: column;
+        position: static;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+    .storeLinks{
+        flex-direction: row;
+    }
+    .hrefs{
+        padding: 0 0 10px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .gImg{
+        border-radius: 20px 20px 0 0;
+    }
     .text, .link{
-        margin: 3px !important;
-        box-shadow: 3px 3px 0 0 black;
-        padding: 5px;
-        border: rgb(87, 16, 194) 2px solid;
-    }
-    p.text, .link{
-        font-size: 10px;
-    }
-    h1.text{
-        font-size: 14px;
-    }
-}
-@media screen and (min-width: 600px) and (max-width: 760px) {
-    .text, .link{
-        margin: 3px !important;
-        box-shadow: 3px 3px 0 0 black;
-        padding: 5px;
-        border: rgb(87, 16, 194) 2px solid;
-    }
-    p.text, .link{
-        font-size: 8px;
-    }
-    h1.text{
-        font-size: 11px;
-    }
-}
-@media screen and (min-width: 425px) and (max-width: 600px) {
-    .text, .link{
+        box-sizing: border-box;
         margin: 2px !important;
         box-shadow: 2px 2px 0 0 black;
         padding: 2px;
         border: rgb(87, 16, 194) 1px solid;
+        width: fit-content;
+        width: 85%;
     }
-    p.text, .link{
-        font-size: 6px;
+    p.text{
+        font-size: 20px;
         text-wrap: wrap;
+        padding: 5px 10px;
     }
-    h1.text{
-        font-size: 10px;
+    h1.text, .link{
+        text-align: center;
+        font-size: 28px;
     }
 }
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 425px) and (max-width: 760px) {
+    .cAndL{
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+    .gameContainer{
+        flex-direction: column;
+        position: static;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+    .storeLinks{
+        flex-direction: row;
+    }
+    .hrefs{
+        padding: 0 0 10px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .gImg{
+        border-radius: 20px 20px 0 0;
+    }
     .text, .link{
+        box-sizing: border-box;
         margin: 2px !important;
         box-shadow: 2px 2px 0 0 black;
         padding: 2px;
         border: rgb(87, 16, 194) 1px solid;
+        width: fit-content;
+        width: 85%;
     }
-    p.text, .link{
-        font-size: 5px;
+    p.text{
+        font-size: 18px;
         text-wrap: wrap;
+        padding: 5px 10px;
     }
-    h1.text{
-        font-size: 8px;
+    h1.text, .link{
+        text-align: center;
+        font-size: 26px;
     }
 }
-@media screen and (min-width: 300px) and (max-width: 375px) {
+@media screen and (min-width: 300px) and (max-width: 425px) {
+    .cAndL{
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+    .gameContainer{
+        flex-direction: column;
+        position: static;
+    }
+    .content{
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+    .storeLinks{
+        flex-direction: row;
+    }
+    .hrefs{
+        padding: 0 0 10px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .gImg{
+        border-radius: 20px 20px 0 0;
+    }
     .text, .link{
+        box-sizing: border-box;
         margin: 2px !important;
         box-shadow: 2px 2px 0 0 black;
         padding: 2px;
         border: rgb(87, 16, 194) 1px solid;
+        width: fit-content;
+        width: 85%;
     }
     p.text, .link{
-        font-size: 4px;
+        padding: 5px 10px;
+        font-size: 12px;
         text-wrap: wrap;
     }
     h1.text{
-        font-size: 8px;
+        font-size: 18px;
     }
 }

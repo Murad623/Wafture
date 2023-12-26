@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 48.8px);
 }
 .confirm{
     display: flex;
@@ -131,7 +131,20 @@ h1{
 .passArea{
 
 }
+@media screen and (min-width: 760px) and (max-width: 991px){
+    .conDelete{
+        height: calc(100vh - 35.2px);
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 760px){
+    .conDelete{
+        height: calc(100vh - 33.6px);
+    }
+}
 @media screen and (min-width: 300px) and (max-width: 375px) {
+    .conDelete{
+        height: calc(100vh - 32.8px);
+    }
     .headlineS{
         font-size: 24px;
     }
