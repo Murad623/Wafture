@@ -13,7 +13,6 @@ export const newsSlice = createSlice({
                 state.page = parseInt(action.payload.page);
             }else{
                 state.value = action.payload;
-                console.log(state.value);
             }
         },
         setPage : (state,action) =>{
