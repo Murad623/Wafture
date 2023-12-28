@@ -12,7 +12,7 @@ const News = () => {
     const options = {
       method: 'GET',
       headers: {
-        'X-RapidAPI-Key': '3c0eeacf5amshe6260b7b7e1e3f9p1240b7jsnf3aae7212797',
+        'X-RapidAPI-Key': 'c4a51dfdadmshc0007b8e921245fp1e3aebjsncd1b5f45748e',
         'X-RapidAPI-Host': 'epic-games-store.p.rapidapi.com'
       }
     };
