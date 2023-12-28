@@ -12,8 +12,9 @@
     align-items: center;
 }
 .AboutWafture .text{
+    box-sizing: border-box;
     padding: 10px;
-    width: 98%;
+    width: 100%;
 }
 .AboutWafture .text p, .AboutWafture .text ul{
     text-align: left;
