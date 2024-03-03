@@ -67,7 +67,7 @@
 .toTheSurface{
     margin-right: 10px;
 }
-@media screen and (min-width: 991px) and (max-width: 1440px) {
+@media screen and (min-width: 991px) {
     .AboutWafture .text{
         margin: 0 !important;
         width: fit-content;
