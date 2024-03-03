@@ -70,7 +70,6 @@
 @media screen and (min-width: 991px) {
     .AboutWafture .text{
         margin: 0 !important;
-        width: fit-content;
     }
     .AboutWafture{
         height: calc(100vh - (53.21px + 48.88px + 20px));
